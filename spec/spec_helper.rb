@@ -1,15 +1,15 @@
 require 'capybara/rspec'
-require 'simplecov'
-require 'simplecov-console'
+# require 'simplecov'
+# require 'simplecov-console'
 require './app/models/link'
 require './app/app'
 
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
-  SimpleCov::Formatter::Console,
-  # Want a nice code coverage website? Uncomment this next line!
-  # SimpleCov::Formatter::HTMLFormatter
-])
-SimpleCov.start
+# SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+#   SimpleCov::Formatter::Console,
+#   # Want a nice code coverage website? Uncomment this next line!
+#   # SimpleCov::Formatter::HTMLFormatter
+# ])
+# SimpleCov.start
 
 Capybara.app = BookmarkManager
 
